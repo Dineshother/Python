@@ -1,0 +1,7 @@
+stri=input("Enter a string: ")
+count=0
+vo="aeiouAEIOU "
+for i in stri:
+    if i not in vo:
+        count+=1
+print(count)
