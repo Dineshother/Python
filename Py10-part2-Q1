@@ -1,0 +1,22 @@
+fr={1023456789:"John Doe",2034567890:"Acme Corporation",3045678901:"Maria Smith",4056789012:"TechNova Ltd",5067890123:"Rajesh Kumar"
+}
+n=1
+for i in fr.items():
+    print(i)
+print("1. Search Account, 2. Delete Account, 3. Exit")
+while n>0:
+    r=int(input("Enter the choice: "))
+    match r:
+        case 1:
+            ac=int(input("Enter the account which is needs to be search: "))
+            if ac in fr:
+                print(f"The Account name is : {fr[ac]}")
+            else:
+                print("The Account is not there")
+        case 2:
+            de=int(input("Enter the account which is needs to be deleted: "))
+            fr.pop(de)
+        case 3:
+            n=0
+for i in fr.items():
+    print(i)
