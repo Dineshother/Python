@@ -1,0 +1,10 @@
+students = {
+    "priya": {"age": 20, "dept": "CS", "gpa": 3.8},
+    "sam": {"age": 21, "dept": "ECE", "gpa": 3.5},
+    "den": {"age": 22, "dept": "ME", "gpa": 3.6},
+    "asha": {"age": 19, "dept": "IT", "gpa": 3.9},
+    "rahul": {"age": 23, "dept": "EE", "gpa": 3.4}
+}
+use=input("Enter the user: ")
+us=students.get(use)
+print(f"The GPA of {use} is {us.get('gpa')}")
