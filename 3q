@@ -1,0 +1,4 @@
+fr={1023456789:"John Doe",2034567890:"Acme Corporation",3045678901:"Maria Smith",4056789012:"TechNova Ltd",5067890123:"Rajesh Kumar"
+}
+tu=list(fr.items())
+print(tu)
